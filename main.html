@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="log2">Логин: </div> 
+    </header>
+    <div id="cont">
+        <div class="container">
+            <h1>Список задач</h1>
+            <div class="task-list">
+                <div class="group_tasks">
+                    <div class="curr_tasks">
+                        <p>Текущие задачи:</p>
+                        <ol id="curr_task">
+                        </ol>
+                    </div>
+                    <div class="compl_tasks">
+                        <p>Завершённые задачи:</p>
+                        <ol id="compl_task">
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="scar">
+        <input  type="submit" id="createTask" onclick="createTask()" value="Новая задача">
+        <input type="submit" id="complTask" value="Завершить">
+        <input type="submit" id="delTask" value="Удалить">
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

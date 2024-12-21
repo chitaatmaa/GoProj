@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/auth.css">
+    <title>Авторизация</title>
+</head>
+<body>
+    <header id="headerAuth">
+        <p id="authText1">БИТ | Авторизационное окно</pp>
+    </header>
+    <div id="server_message_error"></div>
+    <div id="winAuth">
+        <div id="authIn">
+            <label>
+                Логин:
+            </label>
+            <input type="text" class="inputLP" id="log">  
+            <label>
+                Пароль:
+            </label>
+            <input type="password" class="inputLP" id="pas">
+        </div>
+        <div id="scar">
+            <input  type="submit" id="doRequest" onclick="doReq()" value="Войти">
+            <input type="submit" id="doRegister" onclick="doRegister()" value="Регистрация">
+        </div>
+    </div>
+</body>
+<script src="js/auth.js"></script>
+</html>
